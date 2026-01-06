@@ -7,9 +7,8 @@ export const ClientComponent: React.FC<{
 }> = (props) => {
   const { children } = props
   return (
-    <aside
-      className="ClientComponent">
+    <div className="ClientComponent">
         {children}
-    </aside>
+    </div>
   )
 }

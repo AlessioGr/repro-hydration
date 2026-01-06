@@ -4,15 +4,15 @@ const Page = async () => {
   await new Promise((resolve) => setTimeout(resolve, 400))
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div>
       <ClientComponent>
-        <nav className={`nav`}>
+        <div className="wrapper">
           {Array.from({ length: 3000 }).map((_, index) => (
             <div key={index}>
               Label
             </div>
           ))}
-        </nav>
+        </div>
       </ClientComponent>
     </div>
   )
