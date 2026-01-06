@@ -1,19 +1,18 @@
 import React from 'react'
 
 
-import { AfterNavLinks, NavHamburger, NavWrapper } from './components'
+import {  NavWrapper } from './components'
 
 export const DefaultNav: React.FC = () => {
   return (
     <NavWrapper>
-      <nav className={`nav__wrap`}>
+      <nav className={`nav`}>
         {Array.from({ length: 3000 }).map((_, index) => (
           <div key={index}>
-            <AfterNavLinks />
+             Label
           </div>
         ))}
       </nav>
-      <NavHamburger />
     </NavWrapper>
   )
 }
