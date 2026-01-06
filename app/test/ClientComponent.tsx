@@ -2,13 +2,13 @@
 import React from 'react'
 
 
-export const NavWrapper: React.FC<{
+export const ClientComponent: React.FC<{
   children: React.ReactNode
 }> = (props) => {
   const { children } = props
   return (
     <aside
-      className="navWrapper">
+      className="ClientComponent">
         {children}
     </aside>
   )
